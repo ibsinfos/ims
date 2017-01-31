@@ -27,8 +27,8 @@ $mail->SMTPDebug  = 2;                     // enables SMTP debug information (fo
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->Host       = "ssl://smtp.gmail.com"; // sets the SMTP server
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
-$mail->Username   = "ryan.jehan@gmail.com"; // SMTP account username
-$mail->Password   = "Melissa@123";        // SMTP account password
+$mail->Username   = "name@yourdomain.com"; // SMTP account username
+$mail->Password   = "password";        // SMTP account password
 
 $mail->SetFrom('name@yourdomain.com', 'First Last');
 
