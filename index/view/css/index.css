@@ -1,0 +1,210 @@
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/bootstrap-spacelab.css ::::: */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio:not([controls]) { display: none; }
+html { font-size: 100%; }
+a:focus { outline: thin dotted rgb(51, 51, 51); outline-offset: -2px; }
+a:hover, a:active { outline: 0px none; }
+img { max-width: 100%; vertical-align: middle; border: 0px none; }
+button, input, select, textarea { margin: 0px; font-size: 100%; vertical-align: middle; }
+button, input { line-height: normal; }
+button::-moz-focus-inner, input::-moz-focus-inner { padding: 0px; border: 0px none; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; }
+.clearfix {  }
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+@font-face {
+	font-family: "dosis";
+	src: url('segoe.ttf');
+}
+body { margin: 0px; font-family: dosis; font-size: 15px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.1); }
+a { color: rgb(65, 131, 196); text-decoration: none; }
+a:hover { color: rgb(65, 131, 196); text-decoration: underline; }
+[class*="span"] { float: left; margin-left: 20px; }
+.span10 { width: 780px; }
+.span5 { width: 380px; }
+.row-fluid { width: 100%5; }
+.row-fluid:before, .row-fluid:after { display: table; content: ""; }
+.row-fluid:after { clear: both; }
+.row-fluid [class*="span"] { display: block; width: 100%; min-height: 28px; -moz-box-sizing: border-box; float: left; margin-left: 2.12766%; }
+.row-fluid [class*="span"]:first-child { margin-left: 0px; }
+.row-fluid .span10 { width: 82.9787%; }
+.row-fluid .span5 { width: 40.4255%; }
+.container-fluid { padding-right: 20px; padding-left: 20px; }
+.container-fluid:before, .container-fluid:after { display: table; content: ""; }
+.container-fluid:after { clear: both; }
+p { margin: 0px 0px 9px; }
+h1, h2, h3, h4, h5, h6 { margin: 0px; font-family: inherit; font-weight: bold; color: rgb(102, 102, 102); text-rendering: optimizelegibility; }
+h2 { font-size: 24px; line-height: 36px; }
+ul, ol { padding: 0px; margin: 0px 0px 9px 25px; }
+ul { list-style: disc outside none; }
+li { line-height: 18px; }
+hr { margin: 18px 0px; border-right: 0px none; border-left: 0px none; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; border-width: 1px 0px; border-style: solid none; border-color: rgb(245, 245, 245) -moz-use-text-color rgb(255, 255, 255); }
+form { margin: 0px 0px 18px; }
+fieldset { padding: 0px; margin: 0px; border: 0px none; }
+label, input, button, select, textarea { font-size: 15px; font-weight: normal; line-height: 18px; }
+input, button, select, textarea { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { display: inline-block; height: 18px; padding: 4px; margin-bottom: 9px; font-size: 13px; line-height: 18px; color: rgb(85, 85, 85); }
+input, textarea { width: 210px; }
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); border-radius: 3px 3px 3px 3px; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset; -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; }
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus { border-color: rgba(82, 168, 236, 0.8); outline: 0px none; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6); }
+input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] { width: auto; }
+.input-large { width: 210px; }
+input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input[class*="span"], .row-fluid input[class*="span"], .row-fluid select[class*="span"], .row-fluid textarea[class*="span"], .row-fluid .uneditable-input[class*="span"] { float: none; margin-left: 0px; }
+.input-append input[class*="span"], .input-append .uneditable-input[class*="span"], .input-prepend input[class*="span"], .input-prepend .uneditable-input[class*="span"], .row-fluid .input-prepend [class*="span"], .row-fluid .input-append [class*="span"] { display: inline-block; }
+input, textarea, .uneditable-input { margin-left: 0px; }
+input.span10, textarea.span10, .uneditable-input.span10 { width: 770px; }
+input:focus:required:invalid, textarea:focus:required:invalid, select:focus:required:invalid { color: rgb(185, 74, 72); border-color: rgb(238, 95, 91); }
+input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, select:focus:required:invalid:focus { border-color: rgb(233, 50, 45); box-shadow: 0px 0px 6px rgb(248, 185, 183); }
+:-moz-placeholder { color: rgb(153, 153, 153); }
+select{height: 28px;}
+.input-prepend, .input-append { margin-bottom: 5px; }
+.input-prepend input, .input-append input, .input-prepend select, .input-append select, .input-prepend .uneditable-input, .input-append .uneditable-input { position: relative; margin-bottom: 0px; vertical-align: middle; border-radius: 0px 3px 3px 0px; }
+.input-prepend input:focus, .input-append input:focus, .input-prepend select:focus, .input-append select:focus, .input-prepend .uneditable-input:focus, .input-append .uneditable-input:focus { z-index: 2; }
+.input-prepend .add-on, .input-append .add-on { display: inline-block; width: auto; height: 18px; min-width: 16px; padding: 4px 5px; font-weight: normal; line-height: 18px; text-align: center; text-shadow: 0px 1px 0px rgb(255, 255, 255); vertical-align: middle; background-color: rgb(245, 245, 245); border: 1px solid rgb(204, 204, 204); }
+.input-prepend .add-on, .input-append .add-on, .input-prepend .btn, .input-append .btn { margin-left: -1px; border-radius: 0px 0px 0px 0px; }
+.input-prepend .add-on, .input-prepend .btn { margin-right: -1px; }
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child { border-radius: 3px 0px 0px 3px; }
+.form-search input, .form-inline input, .form-horizontal input, .form-search textarea, .form-inline textarea, .form-horizontal textarea, .form-search select, .form-inline select, .form-horizontal select, .form-search .help-inline, .form-inline .help-inline, .form-horizontal .help-inline, .form-search .uneditable-input, .form-inline .uneditable-input, .form-horizontal .uneditable-input, .form-search .input-prepend, .form-inline .input-prepend, .form-horizontal .input-prepend, .form-search .input-append, .form-inline .input-append, .form-horizontal .input-append { display: inline-block; margin-bottom: 0px; }
+.table-striped tbody tr:nth-child(2n+1) td, .table-striped tbody tr:nth-child(2n+1) th { background-color: rgb(249, 249, 249); }
+[class^="icon-"], [class*=" icon-"] { display: inline-block; width: 14px; height: 14px; line-height: 14px; background-image: url('../images/glyphicons-halflings.png'); background-position: 14px 14px; background-repeat: no-repeat; }
+[class^="icon-"]:last-child, [class*=" icon-"]:last-child {  }
+.icon-user { background-position: -168px 0px; }
+.icon32 .icon-lock { 
+    background-image: url("../images/opa-icons-gray32.png");
+    background-position: -210px -24px;
+}
+.icon-lock_1 { 
+    background-image: url("../images/glyphicons-halflings.png");
+    background-position: -285px -25px;
+}
+.well { min-height: 20px; padding: 19px; margin-bottom: 20px; background-color: rgb(245, 245, 245); border: 1px solid rgba(0, 0, 0, 0.05); border-radius: 4px 4px 4px 4px; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset; }
+.btn { display: inline-block; padding: 4px 10px; margin-bottom: 0px; font-size: 13px; line-height: 18px; color: rgb(51, 51, 51); text-align: center; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; cursor: pointer; background-color: rgb(245, 245, 245); background-image: -moz-linear-gradient(center top , rgb(255, 255, 255), rgb(230, 230, 230)); background-repeat: repeat-x; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(179, 179, 179); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; border-radius: 4px 4px 4px 4px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: rgb(230, 230, 230); }
+.btn:active, .btn.active {  }
+.btn:first-child {  }
+.btn:hover { color: rgb(51, 51, 51); text-decoration: none; background-color: rgb(230, 230, 230); background-position: 0px -15px; -moz-transition: background-position 0.1s linear 0s; }
+.btn:focus { outline: thin dotted rgb(51, 51, 51); outline-offset: -2px; }
+.btn.active, .btn:active { background-color: rgb(230, 230, 230); background-image: none; outline: 0px none; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); }
+.btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover { color: rgb(255, 255, 255); text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
+.btn { border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn-primary { background-color: rgb(65, 118, 196); background-image: -moz-linear-gradient(center top , rgb(65, 131, 196), rgb(65, 98, 196)); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { background-color: rgb(65, 98, 196); }
+.btn-primary:active, .btn-primary.active {  }
+button.btn, input.btn[type="submit"] {  }
+button.btn::-moz-focus-inner, input.btn[type="submit"]::-moz-focus-inner { padding: 0px; border: 0px none; }
+.alert { padding: 8px 35px 8px 14px; margin-bottom: 5px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); background-color: rgb(245, 243, 180); border: 1px solid rgb(243, 228, 167); border-radius: 4px 4px 4px 4px; color: rgb(57, 57, 57); }
+.alert-info { background-color: rgb(228, 240, 255); border-color: rgb(192, 231, 255); color: rgb(27, 54, 80); }
+.nav { margin-left: 0px; margin-bottom: 18px; list-style: none outside none; }
+.nav > li > a { display: block; }
+.nav > li > a:hover { text-decoration: none; background-color: rgb(245, 245, 245); }
+.nav-tabs, .nav-pills {  }
+.nav-tabs:before, .nav-pills:before, .nav-tabs:after, .nav-pills:after { display: table; content: ""; }
+.nav-tabs:after, .nav-pills:after { clear: both; }
+.nav-tabs > li, .nav-pills > li { float: left; }
+.nav-tabs > li > a, .nav-pills > li > a { padding-right: 12px; padding-left: 12px; margin-right: 2px; line-height: 14px; }
+.nav-tabs { border-bottom: 1px solid rgb(221, 221, 221); }
+.nav-tabs > li { margin-bottom: -1px; }
+.nav-tabs > li > a { padding-top: 8px; padding-bottom: 8px; line-height: 18px; border: 1px solid transparent; border-radius: 4px 4px 0px 0px; }
+.nav-tabs > li > a:hover { border-color: rgb(245, 245, 245) rgb(245, 245, 245) rgb(221, 221, 221); }
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover { color: rgb(85, 85, 85); background-color: rgb(255, 255, 255); border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; cursor: default; }
+.tab-content { overflow: auto; }
+.tab-content > .tab-pane, .pill-content > .pill-pane { display: none; }
+.tab-content > .active, .pill-content > .active { display: block; }
+.pull-right { float: right; }
+.btn { background-color: rgb(241, 241, 241); background-image: -moz-linear-gradient(center top , rgb(244, 244, 244), rgb(236, 236, 236)); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: rgb(236, 236, 236); }
+.btn:active, .btn.active {  }
+.btn-primary { background-color: rgb(112, 112, 112); background-image: -moz-linear-gradient(center top , rgb(144, 144, 144), rgb(63, 63, 63)); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { background-color: rgb(63, 63, 63); }
+.btn-primary:active, .btn-primary.active {  }
+.pull-right { float: right; }
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/bootstrap-responsive.css ::::: */
+
+.clearfix {  }
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/charisma-app.css ::::: */
+
+/* ::::: http://fonts.googleapis.com/css?family=Shojumaru ::::: */
+
+@font-face {
+	font-family: "Shojumaru";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Shojumaru"), local("Shojumaru-Regular"), url('pyvcim206l3f7gukevtb3t8e0i7kzn-epnyo3hzu7kw.woff') format("woff");
+}
+footer { clear: both; position: relative; bottom: 0px; }
+footer .pull-right { float: right; margin-right: 10px; }
+div.center, p.center, img.center { margin-left: auto ! important; margin-right: auto ! important; float: none ! important; display: block; text-align: center; }
+.clear { clear: both; width: 0px; height: 0px; }
+.sidebar-nav > ul > li:not(.nav-header) { margin-right: -2px; margin-left: -2px; }
+.pull-right { float: right ! important; }
+.login-box_1 { vertical-align: middle; 
+              margin-top: 100px; 
+              box-shadow: 6px 6px 6px 6px #888888;
+}
+.login-box .input-prepend { margin-bottom: 10px; }
+.login-box .btn { margin-top: 15px; width: 100%; }
+.icon-off { background-position: -384px 0px; }
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/jquery-ui-1.8.21.custom.css ::::: */
+
+button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/fullcalendar.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/chosen.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/uniform.default.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/colorbox.css ::::: */
+
+#colorbox, #cboxOverlay, #cboxWrapper { position: absolute; top: 0px; left: 0px; z-index: 9999; overflow: hidden; }
+#cboxOverlay { position: fixed; width: 100%; height: 100%; }
+#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
+#cboxContent { position: relative; }
+#cboxLoadedContent { overflow: auto; }
+#cboxTitle { margin: 0px; }
+#cboxLoadingOverlay, #cboxLoadingGraphic { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
+#colorbox, #cboxContent, #cboxLoadedContent {  }
+#cboxOverlay { background: none repeat scroll 0% 0% rgb(0, 0, 0); }
+#colorbox {  }
+#cboxTopLeft { width: 14px; height: 14px; background: url('controls.png') no-repeat scroll 0px 0px transparent; }
+#cboxTopCenter { height: 14px; background: url('border.png') repeat-x scroll left top transparent; }
+#cboxTopRight { width: 14px; height: 14px; background: url('controls.png') no-repeat scroll -36px 0px transparent; }
+#cboxBottomLeft { width: 14px; height: 43px; background: url('controls.png') no-repeat scroll 0px -32px transparent; }
+#cboxBottomCenter { height: 43px; background: url('border.png') repeat-x scroll left bottom transparent; }
+#cboxBottomRight { width: 14px; height: 43px; background: url('controls.png') no-repeat scroll -36px -32px transparent; }
+#cboxMiddleLeft { width: 14px; background: url('controls.png') repeat-y scroll -175px 0px transparent; }
+#cboxMiddleRight { width: 14px; background: url('controls.png') repeat-y scroll -211px 0px transparent; }
+#cboxContent { background: none repeat scroll 0% 0% rgb(255, 255, 255); overflow: visible; }
+#cboxLoadedContent { margin-bottom: 5px; }
+#cboxLoadingOverlay { background: url('loading_background.png') no-repeat scroll center center transparent; }
+#cboxLoadingGraphic { background: url('loading.gif') no-repeat scroll center center transparent; }
+#cboxTitle { position: absolute; bottom: -25px; left: 0px; text-align: center; width: 100%; font-weight: bold; color: rgb(124, 124, 124); }
+#cboxCurrent { position: absolute; bottom: -25px; left: 58px; font-weight: bold; color: rgb(124, 124, 124); }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { position: absolute; bottom: -29px; background: url('controls.png') no-repeat scroll 0px 0px transparent; width: 23px; height: 23px; text-indent: -9999px; }
+#cboxPrevious { left: 0px; background-position: -51px -25px; }
+#cboxPrevious:hover { background-position: -51px 0px; }
+#cboxNext { left: 27px; background-position: -75px -25px; }
+#cboxNext:hover { background-position: -75px 0px; }
+#cboxClose { right: 0px; background-position: -100px -25px; }
+#cboxClose:hover { background-position: -100px 0px; }
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/jquery.cleditor.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/jquery.noty.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/noty_theme_default.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/elfinder.min.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/elfinder.theme.css ::::: */
+
+.elfinder-cwd table tr:nth-child(2n+1) { background-color: rgb(237, 243, 254); }
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/jquery.iphone.toggle.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/opa-icons.css ::::: */
+
+/* ::::: http://joyonto.net/projects/schoolmanager/template/css/uploadify.css ::::: */
+
+body {  }

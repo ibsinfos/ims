@@ -1,0 +1,100 @@
+<?php 
+session_start() ;
+require_once('dompdf/dompdf_config.inc.php');
+require_once '../model/student.php';
+
+$emp_id = $_GET['employee_id'];
+
+if(isset($emp_id)){
+$obj = new Student();
+   $result =$obj->getRecByEmpID($emp_id);
+   
+?>
+<!------MANAGE STUDENTS------->
+                <div class="tab-pane active" id="manage">
+                	
+
+
+
+<div id="printableArea">
+<form class="form-horizontal" method="post">
+<fieldset>
+<legend>
+<i class="icon32 icon-user"></i>
+Personal Profile
+</legend>
+<center>
+<img class="image_thumbnail_large" style="max-height:200px; max-width:200px;" src="../../store/user_images/<?php echo $result['prof_image'];?>">
+<br/><br/><br/>
+    <table class="table table-striped " style="width:500px;">
+<tbody>
+    <tr>
+        <td width="150">Name</td>
+        <td>
+        <b><?php echo $result['first_name'];?> <?php echo $result['last_name']?></b>
+        </td>
+    </tr>
+       
+    <tr>
+        <td>Birthday</td>
+        <td>
+        <b><?php echo $result['dob'];?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>
+        <b><?php echo $result['gender'];?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>Designation</td>
+        <td>
+        <b><?php echo $result['designation']?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td>
+        <b><?php echo $result['address']?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>
+        <b><?php echo $result['email']?></b>
+        </td>
+    </tr>
+    <tr>
+        <td>Contact</td>
+        <td>
+        <b><?php echo $result['phone']?></b>
+        </td>
+    </tr>
+   
+        
+    
+</tbody>
+</table>
+</center>
+</fieldset>
+</form>
+</div>
+</div>
+<?php
+}
+else{
+    echo "No records found!";
+        
+}
+
+$file_name=$result['first_name']."_".$result['last_name'].date('Ymd');
+$html = ob_get_contents();
+ob_clean();
+$dompdf = new DOMPDF();
+$dompdf->set_paper('letter' , "portrait");
+$dompdf->load_html($html);
+$dompdf->render();
+$dompdf->stream($file_name.".pdf");
+
+?>
