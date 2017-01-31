@@ -151,12 +151,12 @@ function reset_password(){
             $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
             $mail->Host = "smtp.gmail.com";      // sets GMAIL as the SMTP server
             $mail->Port = 465;                   // set the SMTP port for the GMAIL server
-            $mail->Username = "madhavi.upeksha@gmail.com";  // GMAIL username
-            $mail->Password = "pmupeksha";            // GMAIL password
+            $mail->Username = "user.name@gmail.com";  // GMAIL username
+            $mail->Password = "password";            // GMAIL password
 
-            $mail->SetFrom('madhavi.upeksha@gmail.com', 'Madhavi Upeksha');
+            $mail->SetFrom('test@gmail.com', 'Test');
 
-            $mail->AddReplyTo("madhavi.upeksha@gmail.com", "Madhavi Upeksha");
+            $mail->AddReplyTo("test@gmail.com", "Test");
 
             $mail->Subject = "Re-set the password";
 

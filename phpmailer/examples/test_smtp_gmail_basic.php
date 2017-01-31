@@ -30,12 +30,12 @@ $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
 $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 $mail->Port       = 465;                   // set the SMTP port for the GMAIL server
-$mail->Username   = "ryan.jehan@gmail.com";  // GMAIL username
-$mail->Password   = "Melissa@123";            // GMAIL password
+$mail->Username   = "username@gmail.com";  // GMAIL username
+$mail->Password   = "password";            // GMAIL password
 
-$mail->SetFrom('ryan.jehan@gmail.com', 'Jehan Ryan');
+$mail->SetFrom('test@gmail.com', 'Test');
 
-$mail->AddReplyTo("ryan.jehan@gmail.com","Jehan Ryan");
+$mail->AddReplyTo("test@gmail.com","Test");
 
 $mail->Subject    = "PHPMailer Test Subject via smtp";
 
@@ -43,7 +43,7 @@ $mail->AltBody    = "To view the message, please use an HTML compatible email vi
 
 //$mail->MsgHTML($body);
 
-$address = "ryan.jehan@gmail.com";
+$address = "test@gmail.com";
 $mail->AddAddress($address, "John Doe");
 
 $mail->AddAttachment("images/phpmailer.gif");      // attachment
